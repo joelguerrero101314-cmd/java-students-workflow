@@ -6,7 +6,7 @@ public class PlayerConsole {
 
   public static void main(String[] args) {
 
-    Scanner scanner = new Scanner(System.in);
+    Scanner sc = new Scanner(System.in);
 
     int lives = 3;
     int option;
@@ -19,7 +19,7 @@ public class PlayerConsole {
       System.out.println("4. Salir");
       System.out.print("Seleccione una opción: ");
 
-      option = scanner.nextInt();
+      option = sc.nextInt();
 
       switch (option) {
 
@@ -51,6 +51,6 @@ public class PlayerConsole {
 
     } while (option != 4);
 
-    scanner.close();
+    sc.close();
   }
 }

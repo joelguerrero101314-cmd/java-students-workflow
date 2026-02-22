@@ -6,12 +6,12 @@ public class DungeonCounter {
 
   public static void main(String[] args) {
 
-    Scanner scanner = new Scanner(System.in);
+    Scanner sc = new Scanner(System.in);
 
     int totalRooms;
 
     System.out.print("Ingrese la cantidad de salas del dungeon: ");
-    totalRooms = scanner.nextInt();
+    totalRooms = sc.nextInt();
 
     for (int roomNumber = 1; roomNumber <= totalRooms; roomNumber++) {
 
@@ -26,6 +26,6 @@ public class DungeonCounter {
       }
     }
 
-    scanner.close();
+    sc.close();
   }
 }
